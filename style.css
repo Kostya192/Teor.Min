@@ -34,3 +34,20 @@ h4{
 .d2{
   text-align:center;
 }
+
+
+.btn-new {
+  border-radius: 10px;
+  color: rgb(129, 129, 129);
+  transition: .2s linear;
+  background: #b9b9b9;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.btn-new:hover {
+  box-shadow: 2px 2px rgb(0, 0, 0), 4px 4px #000000;
+  top: -4px;
+  left: -4px;
+}
