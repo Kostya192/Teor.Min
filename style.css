@@ -38,16 +38,29 @@ h4{
 
 .btn-new {
   border-radius: 10px;
-  color: rgb(129, 129, 129);
+  color: rgb(5, 161, 101);
   transition: .2s linear;
-  background: #b9b9b9;
+  background: #af0c0c;
   position: relative;
   top: 0;
   left: 0;
+  text-align: center;
 }
 
 .btn-new:hover {
-  box-shadow: 2px 2px rgb(0, 0, 0), 4px 4px #000000;
+  box-shadow: 2px 2px rgb(199, 117, 117), 4px 4px #000000;
   top: -4px;
   left: -4px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition: transform .1s ease;
+  line-height: 1;
 }
+
+.blk_button_data_wrap {
+  text-align: center;
+}
+
