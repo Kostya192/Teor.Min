@@ -37,7 +37,7 @@ h4{
 
 
 .btn-new {
-  border-radius: 10px;
+  border-radius: 30px;
   color: rgb(255, 251, 0);
   transition: .2s linear;
   background: #df6f07;
@@ -45,6 +45,7 @@ h4{
   top: 0;
   left: 0;
   text-align: center;
+  padding: 20px 20px;
 }
 
 .btn-new:hover {
