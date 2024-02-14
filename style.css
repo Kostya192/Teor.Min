@@ -38,9 +38,9 @@ h4{
 
 .btn-new {
   border-radius: 10px;
-  color: rgb(5, 161, 101);
+  color: rgb(255, 251, 0);
   transition: .2s linear;
-  background: #af0c0c;
+  background: #df6f07;
   position: relative;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@ h4{
 }
 
 .btn-new:hover {
-  box-shadow: 2px 2px rgb(199, 117, 117), 4px 4px #000000;
+  box-shadow: 2px 2px rgb(146, 1, 1), 4px 4px #000000;
   top: -4px;
   left: -4px;
   text-align: center;
