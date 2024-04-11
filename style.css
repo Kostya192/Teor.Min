@@ -4,6 +4,24 @@ body {
 	margin: 0 auto;
   padding-top: 50px;
 }
+#flex-container {
+  display: flex;
+  font-family: Consolas, Arial, sans-serif;
+}
+
+#flex-container > div {
+  padding: 1rem;
+}
+
+#flex-auto {
+  flex: auto;
+  border: 1px solid #f00;
+}
+
+#flex-initial {
+  border: 1px solid #000;
+}
+
 h1 {
     font-size: 70px;
     text-align:center;
