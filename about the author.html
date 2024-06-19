@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel = "icon" href = "file3.ico">
+    <title>О Сайте</title> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <style> 
+        :root { 
+            --background-color: #000000; /* Opposite of white-ish */ 
+            --container-color: #2c2c2c; /* Opposite of light grey */ 
+            --text-color: #ffffff; /* Opposite of black */ 
+            --link-color: #1db954; /* Contrasting color for links */ 
+            --link-hover-color: #ff0055; /* Contrasting color for hover links */ 
+            --button-bg-color: #ffffff; /* Opposite background for buttons */ 
+            --button-text-color: #000000; /* Opposite text color */ 
+            --button-hover-bg-color: #000000; /* Opposite hover background */ 
+            --button-hover-text-color: #ffffff; /* Opposite hover text color */ 
+            --shadow-color: rgba(255, 255, 255, 0.8); /* Light shadow */ 
+        } 
+ 
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--background-color); 
+            color: var(--text-color); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        } 
+ 
+        .container { 
+            background-color: var(--container-color); 
+            padding: 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 0 35px var(--shadow-color); 
+            text-align: center; 
+            max-width: 800px; 
+        } 
+ 
+        h1 { 
+            margin-top: 0; 
+        } 
+ 
+        p { 
+            text-align: justify; 
+            line-height: 1.6; 
+        } 
+ 
+        p strong { 
+            color: var(--link-color); 
+        } 
+ 
+        nav a { 
+            color: var(--link-color); 
+            text-decoration: none; 
+            margin: 0 10px; 
+            transition: color 0.3s; 
+        } 
+ 
+        nav a:hover { 
+            color: var(--link-hover-color); 
+        } 
+ 
+        .buttons { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin: 20px 0; 
+        } 
+ 
+        .button { 
+            border: 1px solid var(--text-color); 
+            padding: 15px 20px; 
+            margin: 10px; 
+            text-decoration: none; 
+            color: var(--button-text-color); 
+            background-color: var(--button-bg-color); 
+            border-radius: 10px; 
+            display: inline-block; 
+            width: calc(33% - 20px); 
+            box-sizing: border-box; 
+            transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; 
+        } 
+ 
+        .button:hover { 
+            background-color: var(--button-hover-bg-color); 
+            color: var(--button-hover-text-color); 
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3); 
+        } 
+ 
+        .button:nth-child(1) { 
+            width: 100%; 
+        } 
+         
+    </style> 
+</head> 
+ 
+<body> 
+    <div class="container"> 
+        <h1 id="1">О сайте </h1>
+        <p><strong>создатель Ким Константин Сергеевич</strong></p> 
+        <p>Сайт "<strong>Теоретический минимум по физике с 7-го по 10-й класс</strong>" составлен Кимом Константином Сергеевичем и корректировался педагогическим коллективом ГБОУ Школы №192.</p><br> 
+         
+        <p>Проект является актуальным и ценным в средних и старших классах, так как позволяет систематизировать и повторить учебный материал для подготовки к зачёту, а также в течение всего учебного года во время педагогических заминок, самообразования. 
+            Этот сайт вам поможет в усвоении учебного материала. Формулировки всех тем, представленных в учебниках, понятно и точно формулируются, а язык и редактура оформления материала выполнены в полной 
+            соответствии с нормами русского языка. Система помощи также содержит необ 
+ходимое количество тренировочныхзаданий, часть из которых сопровождается примерами решений. Сложные задачи для самостоятельного решения позволят учащимся закрепить материал темы и развить навыки самостоятельного и методического подхода к самостоятельной работе. 
+</p><br> 
+
+<p>Представленная работа является современным дополнительным учебным пособием и существенно повышает качество подготовки учащихся по физике.</p> 
+<div class="buttons"> 
+    <a href="index.html#3" class="button">На главную</a> 
+</div> 
+</div> 
+</body> 
+
+</html>
