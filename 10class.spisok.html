@@ -1,141 +1,292 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Теоретический минимум</title>
     <link rel = "icon" href = "file3.ico">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="style.css">
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();
-  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffffb9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            color: #000; /* Цвет текста вне кнопок */
+        }
 
-  ym(97023576, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97023576" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  </head>
-  <body>
+        .container {
+            background-color: #d3d3d3;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 35px rgb(0, 0, 0);
+            text-align: center;
+            max-width: 800px;
+            height: 90vh; /* Уменьшена высота блока */
+            overflow-y: auto; /* Скроллинг для длинного содержимого */
+        }
 
- <h1 id="x"> Теоретический минимум 10 класс ⅠⅠ полугодие  </h1>
-<h4><a href = "list3.html#J23">Проверь себя </a> </h4>
+        h1 {
+            margin-top: 0;
+        }
 
-<ol>
-      <a href="formuls10class.html#a1">Равномерное  движение</a>
-      <li>Средняя скорость </li>
-      <li>Средне путевая скорость </li>
-      <li>Зависимость координат от времени при равномерном движении</li>
-      <a href="formuls10class.html#a">Равноускоренное движение</a>
-      
-      <li>Ускорение </li>
-      <li>Зависимость координат от времени </li>
-      <li>Зависимость  скорости от времени </li> 
-      <li>Формула перемещения без времени </li>
-      <li>Формула перемещения без ускорения  </li>
-    <a href="formuls10class.html#b">Равномерное движение по окружности</a>
-      <li>Угловая скорость </li>
-      <li>Связь между линейной и угловой скоростью </li>
-      <li>Связь центростремительного ускорения и угловой скорости </li>
-      
-      <a href="formuls10class.html#c">Динамика</a>
-      
-      <li>Второй закон Ньютона </li>
-      <li>Третий закон Ньютона (формулировка)</li>
-      <li>Сила тяжести </li> 
-      <li>Сила упругости</li> 
-      <li>Сила трения </li>
-      <li>Закон всемирного тяготения</li>
-      <li>Сила Архимеда</li>
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
 
-   <a href="formuls10class.html#d">Законы сохранения</a>
-      
-      <li>Работа</li>
-      <li>Мощность </li>
-      <li>Кинетическая энергия </li> 
-      <li>Потенциальная энергия вблизи поверхности Земли  </li> 
-      <li>Потенциальная энергия сжатой пружины</li>
-      <li>Механическая энергия  </li>
-      <li>Связь между механической энергией и работой </li>
-<li>Закон сохранения энергии (формулировка)</li>
-<li>Импульс </li>
-<li>Второй закон Ньютона в импульсной форме </li>
-<li>Закон сохранения импульса (формулировка)</li>
+        nav a:hover {
+            color: #f105de; /* Розовый цвет при наведении */
+        }
 
- <a href="formuls10class.html#e">Статика</a>
-      <li>Момент силы </li>
-      <li>Условия равновесия протяжённого твёрдого тела</li>
-      <li>Давление</li> 
-      <li>Давление столба жидкости (формула с пояснениями)</li> 
+        .sections-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Распределение по доступному пространству */
+            margin-top: 20px;
+        }
 
+        .section {
+            text-align: left;
+            width: calc(50% - 10px); /* Две колонки */
+            margin-bottom: 20px;
+        }
 
-  <a href="formuls10class.html#f">Колебания</a>
-      <li>Период колебаний математического маятника </li>
-      <li>Период колебания пружинного маятника </li>
-      <li>Длина волны (формулировка)</li> 
+        .section h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
 
- 
-  <a href="formuls10class.html#g">МКТ</a>
-      <li>Основное уравнение МКТ (формула с пояснениями)</li> 
-      <li>Среднеквадратичная скорость</li> 
-      
+        .section ul {
+            list-style-type: none; /* Убраны маркеры списка */
+            padding-left: 0; /* Убран отступ слева */
+        }
 
+        .section ul li {
+            font-size: 14px;
+            color: #000; /* Цвет текста для пунктов списка */
+            margin-bottom: 5px;
+        }
 
- <a href="formuls10class.html#h">Термодинамика</a>
-      <li>Уравнение Клапейрона – Менделеева</li>
-      <li>Закон Дальтона</li>
-      <li>I начало термодинамики (формула с пояснениями)</li>
-      <li>Формула для расчёта теплоты в процессе</li> 
-<p>А)Нагревания</p>
-<p>Б)Плавления</p>
-<p>В)Парообразовани </p>
-<p>Г)Горения</p>
-      <li>Относительная влажность </li> 
-      <li>Внутренняя энергия идеального газа  </li>
-      <li>Работа идеального газа при изобарном процессе</li>
-      <li>Работа в произвольном процессе</li>
-      <li>Цикл Карно</li>
-      <li>К.П.Д. тепловой машины (формула с пояснениями) </li>
-      <li>К.П.Д. цикла Карно</li>
-      
-  <a href="formuls10class.html#I">Электростатика</a>
-      <li>Закон Кулона </li>
-      <li>Напряжённость электрического поля </li>
-      <li>Напряжённость электрического поля точечного заряда </li> 
-      <li>Потенциал</li> 
-      <li>Потенциал поля точечного заряда</li> 
-      <li>Энергия взаимодействия двух точечных зарядов</li> 
-      <li>Ёмкость уединённого проводника</li> 
-      <li>Ёмкость плоского конденсатора</li> 
-      <li>Энергия заряженного конденсатора</li> 
-     <a href="formuls10class.html#K">Электродинамика</a>
-      <li>Сила тока </li>
-      <li>ЭДС  </li>
-      <li>Закон Ома для участка цепи</li>
-      <li>Закон Ома для полной цепи</li>
-      <li>Связь между напряжением и ЭДС</li>
-      <li>Сопротивление цилиндрического проводника (формула с пояснениями)</li> 
-      <li>Закон Джоуля-Ленца </li> 
-      <li>К.П.Д. источника</li> 
+        .section ul li a {
+            color: #4b98eb;
+            text-decoration: none;
+        }
 
-     <a href="formuls10class.html#j">Магнетизм</a>
-     <li>Сила Ампера</li>
-     <li>Сила Лоренса</li>
-      <li>Магнитный поток</li> 
-      <li>Индуктивность</li>
-      <li>Закон ЭМИ </li> 
-      <li>Энергия катушки</li> 
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
 
- <a href="formuls10class.html#L">Оптика</a>
-      <li>Формула тонкой линзы (формула с пояснениями)</li>
-      <li>Закон преломления</li>
-    </ol>
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info a {
+            color: #4b98eb;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        .button-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;   /* Ширина кнопки установлена на 100% от родительского элемента */
+            height: 40px;   /* Фиксированная высота для всех кнопок */
+            margin: 10px 0;  /* Отступ сверху и снизу */
+            text-decoration: none;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 10px; /* Менее закругленные углы */
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #000;
+            color: #fff;
+            transform: scale(1.05); /* Эффект парения */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Теоретический минимум за 10 класс</h1>
+        <h2>ⅠⅠ полугодие</h2>
+        <nav>
+            | <a href="index.html#3">На главную</a> |
+             <a href="list3.html#J23">Проверь себя</a> |
+        </nav>
+        <div class="sections-container"> 
+            <div class="section"> 
+                <a href="list2.html#a1" class="button-link">Равномерное движение</a> 
+                <ul> 
+                    <li>1. Средняя скорость</li> 
+                    <li>2. Средне путевая скорость</li> 
+                    <li>3. Зависимость координат от времени при равномерном движении</li> 
+                </ul> 
+            </div>
+            
+            <div class="section"> 
+                <a href="list2.html#a" class="button-link">Равноускоренное движение</a> 
+                <ul>
+                    <li>4. Ускорение</li> 
+                    <li>5. Зависимость координат от времени</li> 
+                    <li>6. Зависимость скорости от времени</li>  
+                    <li>7. Формула перемещения без времени</li> 
+                    <li>8. Формула перемещения без ускорения</li> 
+                </ul> 
+            </div>
+            
+            <div class="section"> 
+                <a href="list2.html#b" class="button-link">Равномерное движение по окружности</a> 
+                <ul>
+                    <li>9. Угловая скорость</li> 
+                    <li>10. Связь между линейной и угловой скоростью</li> 
+                    <li>11. Связь центростремительного ускорения и угловой скорости</li>  
+                </ul> 
+            </div>
+            
+            <div class="section"> 
+                <a href="list2.html#c" class="button-link">Динамика</a> 
+                <ul>
+                    <li>12. Второй закон Ньютона</li> 
+                    <li>13. Третий закон Ньютона (формулировка)</li> 
+                    <li>14. Сила тяжести</li>  
+                    <li>15. Сила упругости</li>  
+                    <li>16. Сила трения</li> 
+                    <li>17. Закон всемирного тяготения</li> 
+                    <li>18. Сила Архимеда</li> 
+                </ul> 
+            </div>
+         
+            <div class="section"> 
+                <a href="list2.html#d" class="button-link">Законы сохранения</a> 
+                <ul>
+                    <li>19. Работа</li> 
+                    <li>20. Мощность</li> 
+                    <li>21. Кинетическая энергия</li> 
+                    <li>22. Потенциальная энергия вблизи поверхности Земли</li> 
+                    <li>23. Потенциальная энергия сжатой пружины</li>  
+                    <li>24. Потенциальная энергия вблизи поверхности Земли</li>  
+                    <li>25. Связь между механической энергией и работой</li> 
+                    <li>26. Закон сохранения энергии (формулировка)</li> 
+                    <li>27. Импульс</li> 
+                    <li>28. Второй закон Ньютона в импульсной форме</li> 
+                    <li>29. Закон сохранения импульса (формулировка)</li> 
+                </ul> 
+            </div>
+         
+            <div class="section"> 
+                <a href="list2.html#e" class="button-link">Статика</a> 
+                <ul>
+                    <li>30. Момент силы</li> 
+                    <li>31. Условия равновесия протяжённого твёрдого тела</li> 
+                    <li>32. Давление</li>  
+                    <li>33. Давление столба жидкости (формула с пояснениями)</li>  
+                </ul> 
+            </div>
+         
+            <div class="section"> 
+                <a href="list2.html#f" class="button-link">Колебания</a> 
+                <ul>
+                    <li>34. Период колебаний математического маятника</li> 
+                    <li>35. Период колебания пружинного маятника</li> 
+                    <li>36. Длина волны (формулировка)</li>    
+                </ul> 
+            </div>
+         
+            <div class="section"> 
+                <a href="list2.html#g" class="button-link">МКТ</a> 
+                <ul>
+                    <li>37. Основное уравнение МКТ (формула с пояснениями)</li> 
+                    <li>38. Среднеквадратичная скорость</li>  
+                </ul> 
+            </div>
+         
+            <div class="section"> 
+                <a href="list2.html#h" class="button-link">Термодинамика</a> 
+                <ul>
+                    <li>39. Уравнение Клапейрона – Менделеева</li> 
+                    <li>40. Закон Дальтона</li> 
+                    <li>41. I начало термодинамики (формула с пояснениями)                    </li>
+                    <li>42. Формула для расчёта теплоты в процессе:</li>  
+                    <li>  А)Нагревания</li> 
+                    <li>  Б)Плавления</li> 
+                    <li>  В)Парообразования</li> 
+                    <li>  Г)Горения</li> 
+                    <li>43. Относительная влажность</li>  
+                    <li>44. Внутренняя энергия идеального газа</li> 
+                    <li>45. Работа идеального газа при изобарном процессе</li> 
+                    <li>46. Работа в произвольном процессе</li> 
+                    <li>47. К.П.Д. тепловой машины (формула с пояснениями)</li> 
+                    <li>48. К.П.Д. цикла Карно</li>
+                </ul> 
+            </div>
+            
+            <div class="section"> 
+                <a href="list2.html#i" class="button-link">Электростатика</a> 
+                <ul>
+                    <li>50. Закон Кулона</li> 
+                    <li>51. Напряжённость электрического поля</li> 
+                    <li>52. Напряжённость электрического поля точечного заряда</li>  
+                    <li>53. Потенциал</li> 
+                    <li>54. Потенциал поля точечного заряда</li> 
+                    <li>55. Энергия взаимодействия двух точечных зарядов</li> 
+                    <li>56. Ёмкость уединённого проводника</li> 
+                    <li>57. Ёмкость плоского конденсатора</li>  
+                    <li>58. Энергия заряженного конденсатора</li>  
+
+                </ul> 
+            </div>
+             
+            <div class="section"> 
+                <a href="list2.html#k" class="button-link">Электродинамика</a> 
+                <ul>
+                    <li>59. Сила тока</li>
+                    <li>60. ЭДС</li>
+                    <li>61. Закон Ома для участка цепи</li>
+                    <li>62. Закон Ома для полной цепи</li>
+                    <li>63. Связь между напряжением и ЭДС</li>
+                    <li>64. Сопротивление цилиндрического проводника (формула с пояснениями)</li>
+                    <li>65. Закон Джоуля-Ленца</li>
+                    <li>66. К.П.Д. источника</li>
+                </ul> 
+            </div>
+
+            <div class="section"> 
+                <a href="list2.html#k" class="button-link">Магнетизм</a> 
+                <ul>
+                    <li>67. Сила Ампера</li> 
+                    <li>68. Сила Лоренса</li> 
+                    <li>69. Магнитный поток</li> 
+                    <li>70. Индуктивность</li> 
+                    <li>71. Закон ЭМИ</li>
+                    <li>72. Энергия катушки</li>
+                </ul> 
+            </div>
+
+            <div class="section"> 
+                <a href="list2.html#k" class="button-link">Оптика</a> 
+                <ul>
+                    <li>73. Формула тонкой линзы (формула с пояснениями)</li> 
+                    <li>74. Закон преломления</li> 
+                </ul> 
+            </div>
+        </div>
+
+</body>
+</html>
