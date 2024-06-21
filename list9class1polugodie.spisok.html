@@ -1,87 +1,215 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Теоретический минимум</title>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel = "icon" href = "file3.ico">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="style.css">
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-   
-      ym(97023576, "init", {
-           clickmap:true,
-           trackLinks:true,
-           accurateTrackBounce:true,
-           webvisor:true
-      });
-   </script>
-   <noscript><div><img src="https://mc.yandex.ru/watch/97023576" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-   <!-- /Yandex.Metrika counter -->
-</head>
-  <body>
-      
-
- <h1 id="P"> Теоретический минимум 9 класс Ⅰ полугодие  </h1>
-<h3><a href = "TEST9.html#W">Проверь себя </a> </h3>
-
-<ol>
-      <a href="list9class1formul.html#a1">Равномерное  движение</a>
-      <li>Средняя скорость</li>
-      <li>Среднепутевая скорость </li>
-      <li>Зависимость координат от времени при равномерном движении</li>
-      <a href="list9class1formul.html#a">Равноускоренное движение</a>
-      
-      <li>Ускорение </li>
-      <li>Зависимость координат от времени </li>
-      <li>Зависимость  скорости от времени </li> 
-      <li>Формула перемещения без времени </li>
-      <li>Формула перемещения без ускорения  </li>
-      <a href="list9class1formul.html#c">Динамика</a>
-      
-      <li>Сила тяжести </li>
-      <li>Закон Гука </li>
-      <li>Сила трения скольжения </li> 
-      <li>Сила всемирного гравитационного притяжения </li> 
-      
-   <a href="list9class1formul.html#d">Законы сохранения</a>
-      <li>Работа</li>
-      <li>Мощность </li>
-      <li>Теорема о кинетической энергии </li> 
-      <li>Кинетическая энергия  </li> 
-      <li>Потенциальная энергия вблизи поверхности Земли  </li>
-      <li>Потенциальная энергия сжатой пружины  </li>
-      <li>Механическая энергия </li>
-<li>Связь между механической энергией и работой </li>
-<li>Импульс </li>
-<li>Второй закон Ньютона в импульсной форме </li>
-
- <a href="list9class1formul.html#e">Статика</a>
-      <li>Момент силы </li>
-      <li>Условия равновесия протяжённого твёрдого тела</li>
-      <li>Давление</li> 
-      <li>Давление столба жидкости (формула с пояснениями)</li> 
-      <li>Сила Архимеда</li>
-
-<a href="list9class1formul.html#I">Электродинамика</a>
-      <li>Закон Кулона </li>
-      <li>Сила тока  </li>
-      <li>Напряжение  </li>
-      <li>Закон Ома  </li>
-      <li>Закон Джоуля-Ленца </li> 
-
-     <a href="list9class1formul.html#j">Магнетизм</a>
-      <li>Сила Ампера</li>
-      <li>Сила Лоренса</li>
-
- <a href="list9class1formul.html#L">Оптика</a>
-      <li>Закон преломления</li>
-      <li>Формула тонкой линзы (формула с пояснениями)</li>
-      <li>Линейное увеличение (2) </li>
-</ol>
+    <title>Теоретический минимум</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <style> 
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #ffffffb9; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+            margin: 0; 
+            color: #000; /* Цвет текста вне кнопок */ 
+        } 
+ 
+        .container { 
+            background-color: #d3d3d3; 
+            padding: 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 0 35px rgb(0, 0, 0); 
+            text-align: center; 
+            max-width: 800px; 
+            height: 90vh; /* Уменьшена высота блока */ 
+            overflow-y: auto; /* Скроллинг для длинного содержимого */ 
+        } 
+ 
+        h1 { 
+            margin-top: 0; 
+        } 
+ 
+        nav a { 
+            color: rgb(0, 0, 0); 
+            text-decoration: none; 
+            margin: 0 10px; 
+            transition: color 0.3s; 
+        } 
+ 
+        nav a:hover { 
+            color: #f105de; /* Розовый цвет при наведении */ 
+        } 
+ 
+        .sections-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; /* Распределение по доступному пространству */ 
+            margin-top: 20px; 
+        } 
+ 
+        .section { 
+            text-align: left; 
+            width: calc(50% - 10px); /* Две колонки */ 
+            margin-bottom: 20px; 
+        } 
+ 
+        .section h2 { 
+            font-size: 18px; 
+            color: #333; 
+            margin-bottom: 10px; 
+        } 
+ 
+        .section ul { 
+            list-style-type: none; /* Убраны маркеры списка */ 
+            padding-left: 0; /* Убран отступ слева */ 
+        } 
+ 
+        .section ul li { 
+            font-size: 14px; 
+            color: #000; /* Цвет текста для пунктов списка */ 
+            margin-bottom: 5px; 
+        } 
+ 
+        .section ul li a { 
+            color: #4b98eb; 
+            text-decoration: none; 
+        } 
+ 
+        .section ul li a:hover { 
+            text-decoration: underline; 
+        } 
+ 
+        .info { 
+            margin-top: 20px; 
+            text-align: left; 
+            font-size: 14px; 
+            line-height: 1.5; 
+        } 
+ 
+        .info a { 
+            color: #4b98eb; 
+            text-decoration: none; 
+        } 
+ 
+        .info a:hover { 
+            text-decoration: underline; 
+        } 
+ 
+        .button-link { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 100%;   /* Ширина кнопки установлена на 100% от родительского элемента */ 
+            height: 40px;   /* Фиксированная высота для всех кнопок */ 
+            margin: 10px 0;  /* Отступ сверху и снизу */ 
+            text-decoration: none; 
+            color: #000; 
+            border: 2px solid #000; 
+            border-radius: 10px; /* Менее закругленные углы */ 
+            background-color: #fff; 
+            transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+        } 
+ 
+        .button-link:hover { 
+            background-color: #000; 
+            color: #fff; 
+            transform: scale(1.05); /* Эффект парения */ 
+        } 
+ 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>Теоретический минимум</h1> 
+        <p>Теоретический минимум 9 класс Ⅰ полугодие:</p> 
+        <nav> 
+            | <a href="index.html#3">На главную</a> | 
+             <a href="TEST9.html#W">Проверь себя</a> | 
+        </nav> 
+ 
+        <div class="sections-container"> 
+            <div class="section"> 
+                <a href="list9class1formul.html#a1" class="button-link">Равномерное движение</a> 
+                <ul> 
+                    <li>1. Средняя скорость</li> 
+                    <li>2. Среднепутевая скорость</li>
+<li>3. Зависимость координат от времени при равномерном движении</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#a" class="button-link">Равноускоренное движение</a> 
+                <ul> 
+                    <li>4. Ускорение</li> 
+                    <li>5. Зависимость координат от времени</li> 
+                    <li>6. Зависимость скорости от времени</li> 
+                    <li>7. Формула перемещения без времени</li> 
+                    <li>8. Формула перемещения без ускорения</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#c" class="button-link">Динамика</a> 
+                <ul> 
+                    <li>9. Сила тяжести</li> 
+                    <li>10. Закон Гука</li> 
+                    <li>11. Сила трения скольжения</li> 
+                    <li>12. Сила всемирного гравитационного притяжения</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#d" class="button-link">Законы сохранения</a> 
+                <ul> 
+                    <li>13. Работа</li> 
+                    <li>14. Мощность</li> 
+                    <li>15. Теорема о кинетической энергии</li> 
+                    <li>16. Кинетическая энергия</li> 
+                    <li>17. Потенциальная энергия вблизи поверхности Земли</li> 
+                    <li>18. Потенциальная энергия сжатой пружины</li> 
+                    <li>19. Механическая энергия</li> 
+                    <li>20. Связь между механической энергией и работой</li> 
+                    <li>21. Импульс</li> 
+                    <li>22. Второй закон Ньютона в импульсной форме</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#e" class="button-link">Статика</a> 
+                <ul> 
+                    <li>23. Момент силы</li> 
+                    <li>24. Условия равновесия протяжённого твёрдого тела</li> 
+                    <li>25. Давление</li> 
+                    <li>26. Давление столба жидкости (формула с пояснениями)</li> 
+                    <li>27. Сила Архимеда</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#I" class="button-link">Электродинамика</a> 
+                <ul> 
+                    <li>28. Закон Кулона</li> 
+                    <li>29.Сила тока</li> 
+                    <li>30.Напряжение</li> 
+                    <li>31.Закон Ома</li> 
+                    <li>32.Закон Джоуля-Ленца</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#j" class="button-link">Магнетизм</a> 
+                <ul> 
+                    <li>33.Сила Ампера</li> 
+                    <li>34.Сила Лоренса</li> 
+                </ul> 
+            </div> 
+            <div class="section"> 
+                <a href="list9class1formul.html#L" class="button-link">Оптика</a> 
+                <ul> 
+                    <li>35. Закон преломления</li> 
+                    <li>36. Формула тонкой линзы (формула с пояснениями)</li> 
+                    <li>37. Линейное увеличение (2)</li> 
+                </ul> 
+            </div> 
+        </div> 
+    </div> 
+</body> 
+</html>
