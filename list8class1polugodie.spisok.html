@@ -1,74 +1,213 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Теоретический минимум</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href = "file3.ico">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="style.css">
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();
-  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <title>Теоретический минимум</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffffb9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            color: #000; /* Цвет текста вне кнопок */
+        }
 
-  ym(97023576, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97023576" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  </head>
-  <body>
+        .container {
+            background-color: #d3d3d3;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 35px rgb(0, 0, 0);
+            text-align: center;
+            max-width: 800px;
+            height: 90vh; /* Уменьшена высота блока */
+            overflow-y: auto; /* Скроллинг для длинного содержимого */
+        }
 
- <h1 id="n"> Теоретический минимум 8 класс Ⅰ полугодие  </h1>
-<h3><a href = "list8class1polugodie.TEST.html#J1">Проверь себя </a></h3>
-<h3><a href = "list8class1formul.html#J2">К формулам </a></h3>
-<ol>
-      <li>Средняя скорость</li>
-      <li>Среднепутевая скорость </li>
-      <li>Зависимость координат от времени при равноускоренном движении </li>
-      <li>Перемещение при равносукоренном движении (три формулы)</li>
-      <li>Зависимость скорости от времени при равноускоренном движении </li>
-      <li>Сила тяжести </li>
-      <li>Сила упругости </li>
-      <li>Сила трения скольжения </li>
-      <li>Сила всемирного гравитационного притяжения </li>
-      <li>Сила Архимеда</li>
-      <li>Второй закон Ньютона</li>
-      <li>Третий закон Ньютона (формула+формулировка)</li>
-      <li>Момент силы</li>
-      <li>Механическая работа</li>
-      <li>Мощность</li>
-      <li>Коэффициент полезного действия </li>
-      <li>Кинетическая энергия </li>
-      <li>Потенциальная энергия тела вблизи поверхности Земли</li>
-      <li>Потенциальная энергия сжатой пружины </li>
-      <li>Закон сохранения энергии (формула + формулировка)</li>
-      <li>Связь между работой и энергией</li>
-      <li>Давление</li>
-      <li>Давление столба жидкости </li>
-      <li>Внутренняя энергия (определение)</li>
-      <li>Относительная влажность воздуха </li>
-      <li>Насыщенный пар (определение)</li>
-      <li>Теплоёмкость вещества</li>
-      <li>Удельная теплоёмкость вещества </li>
-      <li>Удельная теплота сгорания топлива (определение + формула)</li>
-      <li>Удельная теплота плавления</li>
-      <li>Удельная теплота парообразования </li>
-      <li>Уравнение теплового баланса </li>
-      <li>Уравнение Клапейрона-Менделеева </li>
-      <li>Закон Дальтона (определение)</li>
-      <li>Первый закон термодинамики (формула)</li>
-      <li>Первое начало термодинамики (для каждого изопроцесса)</li>
-      <li>Адиабатический процесс (определение+формула)</li>
-      <li>Работа идеального газа (формула)</li>
-      <li>Коэффициент полезного действия теплового двигателя (формула)</li>
-      <li>Принципиальная схема действия любого теплового двигателя </li>
-</ol>
+        h1 {
+            margin-top: 0;
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f105de; /* Розовый цвет при наведении */
+        }
+
+        .sections-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Распределение по доступному пространству */
+            margin-top: 20px;
+        }
+
+        .section {
+            text-align: left;
+            width: calc(50% - 10px); /* Две колонки */
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none; /* Убраны маркеры списка */
+            padding-left: 0; /* Убран отступ слева */
+        }
+
+        .section ul li {
+            font-size: 14px;
+            color: #000; /* Цвет текста для пунктов списка */
+            margin-bottom: 5px;
+        }
+
+        .section ul li a {
+            color: #4b98eb;
+            text-decoration: none;
+        }
+
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info a {
+            color: #4b98eb;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        .button-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;   /* Ширина кнопки установлена на 100% от родительского элемента */
+            height: 40px;   /* Фиксированная высота для всех кнопок */
+            margin: 10px 0;  /* Отступ сверху и снизу */
+            text-decoration: none;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 10px; /* Менее закругленные углы */
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #000;
+            color: #fff;
+            transform: scale(1.05); /* Эффект парения */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id ="a1">Теоретический минимум за 8 класс</h1>
+        <h2>Ⅰ полугодие</h2>
+        <nav>
+            | <a href="index.html#3">На главную</a> |
+             <a href="list8class1polugodie.TEST.html#J1">Проверь себя</a> |
+        </nav>
+        <div class="sections-container">
+            <div class="section">
+                <a href="list8class1formul.html#1" class="button-link">Равномерное движение</a>
+                <ul>
+                    <li>1. Средняя скорость</li>
+                    <li>2. Среднепутевая скорость</li>
+                </ul>
+            </div>
+            <div class="section">
+                <a href="list8class1formul.html#2" class="button-link">Равноускоренное движение</a>
+                <ul>
+                    <li>3. Зависимость координат от времени при равнускоренном движении</li>
+                    <li>4. Перемещение при равнускоренном движении (три формулы)</li>
+                    <li>5. Зависимость скорости от времени при равнускоренном движении</li>
+                </ul>
+            </div>
+            <div class="section">
+                <a href="list8class1formul.html#3" class="button-link">Динамика</a>
+                <ul>
+                    <li>6. Сила тяжести</li>
+                    <li>7. Сила упругости</li>
+                    <li>8. Сила трения скольжения</li>
+                    <li>9. Сила всемирного гравитационного притяжения</li>
+                    <li>10. Сила Архимеда</li>
+                    <li>11. Второй закон Ньютона</li>
+                    <li>12. Третий закон Ньютона (формула+формулировка)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <a href="list8class1formul.html#4" class="button-link">Статика</a>
+                <ul>
+                    <li>13. Момент силы</li>
+                    <li>14. Коэффициент полезного действия</li>
+                    <li>15. Давление</li>
+                    <li>16. Давление столба жидкости</li>
+                </ul>
+            </div>
+            <div class="section">
+                <a href="list8class1formul.html#5" class="button-link">Законы Сохранения</a>
+                <ul>
+                    <li>17. Механическая работа</li>
+                    <li>18. Мощность</li>
+                    <li>19. Кинетическая энергия</li>
+                    <li>20. Потенциальная энергия тела вблизи поверхности Земли</li>
+                    <li>21. Потенциальная энергия сжатой пружины</li>
+                    <li>22. Закон сохранения энергии (формула + формулировка)</li>
+                    <li>23. Связь между работой и энергией</li>
+                </ul>
+            </div>
+            <div class="section">
+                <a href="list8class1formul.html#6" class="button-link">Термодинамика</a>
+                <ul>
+                    <li>24. Внутренняя энергия (определение)</li>
+                    <li>25. Удельная влажность воздуха</li>
+                    <li>26. Насышенный пар (определение)</li>
+                    <li>27. Теплоёмкость вещества</li>
+                    <li>28. Удельная теплоёмкость вещества</li>
+                    <li>29. Удельная теплота сгорания топлива (определение + формула)</li>
+                    <li>30. Удельная теплота плавления</li>
+                    <li>31. Удельная теплота парообразования</li>
+                    <li>32. Уравнение теплового баланса</li>
+                    <li>33. Уравнение Клапейрона-Менделеева</li>
+                    <li>34. Закон Дальтона (определение)</li>
+                    <li>35. Работа термодинамики (формула)</li>
+                    <li>36. Газовые процессы (для каждого изопроцеса)</li>
+                    <li>37. Идеальный цикл Карно (определение+формула)</li>
+                    <li>38. Первый закон термодинамики (формула)</li>
+                    <li>39. КПД тепловых машин</li>
+                    <li>40. Максимальная схема действия любого теплового двигателя (формула)</li>
+                </ul>
+            </div>
+        </div>
+        
+                </ul>
+            </div>
+        </div>
+        
+        
+
+</body>
+</html>
