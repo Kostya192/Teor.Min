@@ -4,149 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="file3.ico">
-    <title>О Сайте</title>
+    <link rel="icon" href="donat.ico">
+    <title>Поддержать</title>
+    <script src="script.js" defer></script>
+    <link rel = "icon" href = "file3.ico">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --background-color: #000000;
-            --container-color: #2c2c2c;
-            --text-color: #ffffff;
-            --link-color: #1db954;
-            --link-hover-color: #ff0055;
-            --button-bg-color: #ffffff;
-            --button-text-color: #000000;
-            --button-hover-bg-color: #000000;
-            --button-hover-text-color: #ffffff;
-            --shadow-color: rgba(255, 255, 255, 0.8);
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background-color: var(--container-color);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 35px var(--shadow-color);
-            text-align: center;
-            max-width: 800px;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        p {
-            text-align: justify;
-            line-height: 1.6;
-        }
-
-        p strong {
-            color: var(--link-color);
-        }
-
-        nav a {
-            color: var(--link-color);
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--link-hover-color);
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .button {
-            border: 1px solid var(--text-color);
-            padding: 15px 20px;
-            margin: 10px;
-            text-decoration: none;
-            color: var(--button-text-color);
-            background-color: var(--button-bg-color);
-            border-radius: 10px;
-            display: inline-block;
-            width: calc(33% - 20px);
-            box-sizing: border-box;
-            transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-        }
-
-        .button:hover {
-            background-color: var(--button-hover-bg-color);
-            color: var(--button-hover-text-color);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
-        }
-
-        .button:nth-child(1) {
-            width: 100%;
-        }
-
-        /* Стили для блока "Поддержать проект" */
-        .support-section {
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        .support-section img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 15px;
-            margin-bottom: 10px;
-        }
-
-        .support-section h2 {
-            margin-bottom: 10px;
-        }
-
-        .support-section a {
-            display: inline-block;
-            text-decoration: none;
-            font-size: 18px;
-            color: var(--link-color);
-            margin-top: 10px;
-            transition: color 0.3s;
-        }
-
-        .support-section a:hover {
-            color: var(--link-hover-color);
-        }
-    </style>
-</head>
-
+    <link id="theme-style" rel="stylesheet" href="light.css">
 <body>
     <div class="container">
-        <h1 id="1">Поддержите проект</h1>
-        <p>Свой сайт я делал полностью <strong>бесплатно</strong> и мне нужна финансовая поддержка для реализации дальнейших проектов.</p><br>
-        <p>Снизу QR код и ссылочка для вашего доната</p>
+        <h1 id="3">Поддержите нас</h1>
+
+        <p>Доступ ко всем материалам на сайте полностью бесплатен, будет приятно, если существование проекта кто-то поддержит</p>
+        <nav> 
+            <a href="https://www.tinkoff.ru/rm/r_tbcWpbqGrE.SuvqjFHSJK/VUVLS45911">Перейти по ссылке, чтобы поддержать!</a>
+        </nav>
+
         <div class="support-section">
-            <h2>Поддержать проект</h2>
             <img src="qr.jpg" alt="QR-код для поддержки проекта">
-            <br>
-            <a href="https://www.tinkoff.ru/rm/r_tbcWpbqGrE.SuvqjFHSJK/VUVLS45911" target="_blank">Перейти по ссылке, чтобы поддержать!</a>
         </div>
         <div class="buttons">
-            <a href="index.html#3" class="button">На главную</a>
+            <a href="index.html" class="button">На главную</a>
         </div>
-
-        <!-- Блок для создания модуля "Поддержать проект" -->
-
     </div>
 </body>
 

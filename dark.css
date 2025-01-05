@@ -1,0 +1,112 @@
+:root {
+    --background-color-light: #201e1e;
+    --background-color-dark: #2c2c2c;
+    --text-color-light: #ffffff;
+    --text-color-dark: #3b3838;
+    --primary-color: #433cc4; /* Зеленый */
+    --hover-color: #8aa4ff; /* Темно-зеленый */
+    --footer-color: #555;
+    --transition-time: 0.3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    margin: 0;
+    padding: 0;
+    transition: background-color var(--transition-time), color var(--transition-time);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color-light); /* Цвет текста в светлой теме */
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    transition: color var(--transition-time);
+}
+
+body.dark-theme nav a {
+    color: #f5f5f5; /* Цвет текста в темной теме */
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform var(--transition-time);
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.topic-panel {
+    margin-top: 20px;
+}
+
+.panel-title {
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color var(--transition-time), transform var(--transition-time);
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--footer-color);
+    color: white;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform var(--transition-time);
+}
+
+.theme-toggle:hover {
+    transform: rotate(360deg);
+}
+
