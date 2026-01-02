@@ -6,25 +6,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel = "icon" href = "file3.ico">
         <title>Контакты</title> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> 
         <script src="script.js" defer></script>
         <link id="theme-style" rel="stylesheet" href="light.css"> <!-- Подключаем светлую тему по умолчанию -->
+        <link id="stylesheet" rel="stylesheet" href="styls.css">
     </head> 
      
     <body> 
+        <a href="index.html" class="home-button" aria-label="На главную" title="На главную"></a>
+        <button class="theme-toggle" aria-label="Переключить тему"></button>
+        
         <div class="container"> 
             <h1 id="2">Контакты</h1>  
-            <p><strong>Связаться с нами:</strong></p> 
-            <nav>  
-                <p>Электронная почта автора: <a href="mailto:kimkonstantin892@gmail.com">Ссылочка</a></p> 
-                <p>ВК: <a href="https://vk.com/konstantinkim">Ссылочка</a></p> 
-                <p>Сайт школы: <a href="https://sch192uz.mskobr.ru/?ysclid=lvply8d0tp979030685" target="_blank"> Ссылочка</a></p>
-                <p>Виктор Михайлович Будин: <a href="mailto:budinvm@sch192.net">Почта</a></p> 
-                <p>Обращение в тех. поддержку <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwSdALij1OewbgE_Unlbk20XaGszhK9z9rKm0zQgCv2xZU6w/viewform?usp=dialog"> Форма</a></p> 
-            </nav>
-            <div class="buttons"> 
-                <a href="index.html#3" class="button">На главную</a> 
-            </div> 
+            <p class="subtitle">Связаться с нами</p> 
+            
+            <div class="contacts-list">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-label">Электронная почта автора</div>
+                        <a href="mailto:kimkonstantin892@gmail.com" class="contact-link">kimkonstantin892@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-label">ВКонтакте</div>
+                        <a href="https://vk.com/konstantinkim" class="contact-link" target="_blank">vk.com/konstantinkim</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-label">Сайт школы № 192</div>
+                        <a href="https://sch192uz.mskobr.ru/?ysclid=lvply8d0tp979030685" class="contact-link" target="_blank">sch192uz.mskobr.ru</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-label">Виктор Михайлович Будин</div>
+                        <a href="mailto:budinvm@sch192.net" class="contact-link">budinvm@sch192.net</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-label">Обращение в тех. поддержку</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwSdALij1OewbgE_Unlbk20XaGszhK9z9rKm0zQgCv2xZU6w/viewform?usp=dialog" class="contact-link" target="_blank">Форма обратной связи</a>
+                    </div>
+                </div>
+            </div>
         </div> 
     </body> 
    

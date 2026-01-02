@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Формулы </title>
-    <link rel = "icon" href = "file3.ico">
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формулы - 10 класс</title>
+    <link rel="icon" href="file3.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link id="theme-style" rel="stylesheet" href="light.css">
+    <link id="stylesheet" rel="stylesheet" href="styls.css">
   <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -24,24 +30,22 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/97023576" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<style>
-  body {
-      font-family: montserrat, sans-serif;
-      margin: 0;
-      padding: 0;
-      padding-top: 60px; /* Отступ для фиксированного верхнего бара */
-  }
-  .content {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-  }
-  h2, h3 {
-      color: #000000;
-  }
-</style>
 </head>
-  <body>
+<body>
+    <a href="index.html" class="home-button" aria-label="На главную" title="На главную"></a>
+    <button class="theme-toggle" aria-label="Переключить тему"></button>
+    
+    <div class="container">
+        <!-- Поиск по формулам -->
+        <div class="search-container formula-search">
+            <input type="text" id="formulaSearchInput" placeholder="Поиск по формулам..." class="search-input">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+            </svg>
+        </div>
+        
+        <div class="content">
 <h2 id="a1">Равномерное движение</h2>
 
 <h3>1) Средняя скорость </h3>
@@ -523,4 +527,33 @@ $$n_{1}, n_{2} \text{ - абсолютные показатели преломл
 $$\sin(\alpha) \text{ - синус угла падения}$$
 $$\sin(\beta)  \text{ - синус угла преломления}$$
 
-
+        </div>
+    </div>
+    
+    <script>
+    // Поиск по формулам на странице
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('formulaSearchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase().trim();
+                const sections = document.querySelectorAll('h2, h3, p');
+                
+                sections.forEach(section => {
+                    const text = section.textContent.toLowerCase();
+                    const parent = section.closest('div') || section.parentElement;
+                    
+                    if (searchTerm === '' || text.includes(searchTerm)) {
+                        section.style.display = '';
+                        section.style.opacity = '1';
+                    } else {
+                        section.style.display = 'none';
+                        section.style.opacity = '0';
+                    }
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>

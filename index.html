@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="yandex-verification" content="cead757aad5ed1b3" />
     <meta name="google-site-verification" content="uxtQOcQNshzYrjQw9YIuV1Vv2l51yv7kpmbMhcdI26I" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel = "icon" href = "file3.ico">
     <title>Теоретический минимум по физике</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -33,31 +35,115 @@
  <!-- /Yandex.Metrika counter -->
  
   <body> 
-    <div class="container"> 
-        <h1 id="3">Теоретический минимум по физике</h1> 
-        <p>Образование должно быть доступным</p> 
-        <nav> 
-            <a href="ABOUTSITEAAAAAA.html">О Сайте</a>
-            <a href="contacts.html">Контакты</a>
-            <a href="donat.html">Поддержать</a>
-            <button class="theme-toggle" aria-label="Переключить тему">
-              🌙 <!-- Иконка для переключения темы -->
-          </button>        
-        </nav> 
+    <!-- Верхняя навигационная панель -->
+    <header class="header">
+        <div class="header-container">
+            <nav class="nav">
+                <a href="ABOUTSITEAAAAAA.html" class="nav-link">О Сайте</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+                <a href="donat.html" class="nav-link">Поддержать</a>
+            </nav>
+            <button class="theme-toggle" aria-label="Переключить тему"></button>
+        </div>
+    </header>
 
-        <!-- Панель выбора между "Темы по классам" и "Изучай физику по темам" -->
-        <div class="topic-panel">
-            <div class="panel-title">Раздел для учащихся школы № 192</div>
-            <div class="buttons">
-              <a href="list7class2polugodie.spisok.html#y" class="button">7 класс 2-e полугодие</a> 
-              <a href="list8class1polugodie.spisok.html#n" class="button">8 класс 1-е полугодие</a>
-              <a href="list8class2polugodie.spisok.html#y" class="button">8 класс 2-е полугодие</a> 
-              <a href="list9class1polugodie.spisok.html#P" class="button">9 класс 1-е полугодие</a> 
-              <a href="list9class2polugodie.spisok.html#Q" class="button">9 класс 2-е полугодие</a>
-              <a href="list10_1_polugodie.html#m" class="button">10 класс 1-е полугодие</a>  
-              <a href="10class.spisok.html#x" class="button">10 класс 2-е полугодие</a> 
+    <!-- Главный контент -->
+    <main class="main-content">
+        <div class="container"> 
+            <!-- Герой секция -->
+            <section class="hero">
+                <h1 class="hero-title">Теоретический минимум по физике</h1> 
+                <p class="hero-subtitle">Образование должно быть доступным</p>
+            </section>
+
+            <!-- Поиск по темам -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Поиск по темам..." class="search-input">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
             </div>
-            <p>Рекомендация: для удобного поиска темы с ПК используй клавишу F3</p> 
+
+            <!-- Панель выбора между "Темы по классам" и "Изучай физику по темам" -->
+            <div class="topic-panel">
+                <h2 class="section-title">Раздел для учащихся школы № 192</h2>
+                <div class="cards-grid">
+                    <a href="list7class2polugodie.spisok.html#y" class="card">
+                        <div class="card-number">7</div>
+                        <div class="card-content">
+                            <div class="card-title">7 класс</div>
+                            <div class="card-subtitle">2-e полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="list8class1polugodie.spisok.html#n" class="card">
+                        <div class="card-number">8</div>
+                        <div class="card-content">
+                            <div class="card-title">8 класс</div>
+                            <div class="card-subtitle">1-е полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="list8class2polugodie.spisok.html#y" class="card">
+                        <div class="card-number">8</div>
+                        <div class="card-content">
+                            <div class="card-title">8 класс</div>
+                            <div class="card-subtitle">2-е полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="list9class1polugodie.spisok.html#P" class="card">
+                        <div class="card-number">9</div>
+                        <div class="card-content">
+                            <div class="card-title">9 класс</div>
+                            <div class="card-subtitle">1-е полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="list9class2polugodie.spisok.html#Q" class="card">
+                        <div class="card-number">9</div>
+                        <div class="card-content">
+                            <div class="card-title">9 класс</div>
+                            <div class="card-subtitle">2-е полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="list10_1_polugodie.html#m" class="card">
+                        <div class="card-number">10</div>
+                        <div class="card-content">
+                            <div class="card-title">10 класс</div>
+                            <div class="card-subtitle">1-е полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="10class.spisok.html#x" class="card">
+                        <div class="card-number">10</div>
+                        <div class="card-content">
+                            <div class="card-title">10 класс</div>
+                            <div class="card-subtitle">2-е полугодие</div>
+                        </div>
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="hint-text">Рекомендация: для удобного поиска темы с ПК используй клавишу F3</p>
+            </div>
+        </div>
+    </main> 
 
     <script src="theme.js"></script>
   </body>
