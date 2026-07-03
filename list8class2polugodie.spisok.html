@@ -8,23 +8,18 @@
     <title>Теоретический минимум</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <link id="theme-style" rel="stylesheet" href="light.css"> <!-- Подключаем светлую тему по умолчанию -->
-    <link id="stylesheet" rel="stylesheet" href="styls.css">
+    <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <button class="theme-toggle" aria-label="Переключить тему">
-        🌙
-    </button>
-    <div class="container">
+    <a href="index.html" class="home-button" aria-label="На главную" title="На главную"></a>
+    <button class="theme-toggle" aria-label="Переключить тему"></button>
+    <div class="container page-list">
       <h1 id ="a1">Теоретический минимум за 8 класс</h1>
         <h2>ⅠⅠ полугодие</h2>
-        <nav>
-             <a href="index.html#3">На главную</a> 
-             <a href="list8class2polugodie.TEST.html#K">Проверь себя</a> 
-        </nav>
-        <nav>
+        <nav class="page-nav"><a href="index.html#3" class="page-nav-btn page-nav-btn--home">На главную</a><a href="list8class2polugodie.TEST.html#K" class="page-nav-btn page-nav-btn--test">Проверь себя</a></nav>
         <div class="sections-container">
             <div class="section">
                 <a href="list8class2formul.html#1" class="button-link">Равномерное движение</a>
@@ -123,8 +118,6 @@
             </div>
 
          </div>
-        </nav>  
-            
-
+    </div>
 </body>
 </html>

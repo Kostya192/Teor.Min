@@ -1,274 +1,71 @@
-/* Минималистичные базовые стили */
-* {
-    box-sizing: border-box;
-}
-
+/* Formula & test pages — дополнение к base.css */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 40px;
-    background-color: #fafafa;
-    color: #1a1a1a;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    padding-top: 0;
+    background-color: var(--background-color, #fafbfc);
+    color: var(--text-color-primary, #0f172a);
 }
 
 .content {
-    padding: 32px 24px;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #e5e5e5;
+    padding: 24px;
+    background: var(--card-bg, #fff);
+    border: 1.5px solid var(--border-color, #e2e8f0);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
 }
 
 h1 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 600;
     text-align: center;
     letter-spacing: -0.03em;
+    color: var(--text-color-primary, #0f172a);
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
-    color: #1a1a1a;
-    margin: 32px 0 16px 0;
-    padding-top: 24px;
-    border-top: 1px solid #e5e5e5;
+    color: var(--text-color-primary, #0f172a);
+    margin: 28px 0 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color, #e2e8f0);
 }
 
-h2:first-child {
-    border-top: none;
-    padding-top: 0;
-}
+h2:first-child { border-top: none; padding-top: 0; }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     font-weight: 500;
     text-align: center;
-    color: #2563eb;
-    margin: 24px 0 12px 0;
+    color: var(--primary-color, #2563eb);
+    margin: 20px 0 10px;
 }
 
-p {
-    margin: 16px 0;
-    text-align: center;
-}
+p { margin: 14px 0; text-align: center; }
 
-h4 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
-    font-weight: 500;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 32px 0;
-}
-
-a {
-    font-size: 1rem;
-    text-align: center;
-    transition: all 0.2s ease;
-}
-
-.d1, .d2 {
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 1px solid #e5e5e5;
-}
-
-/* Стили для виджетов */
-[id^="otp_wgt_"] {
-    max-width: 900px;
-    margin: 32px auto;
-    padding: 0 24px;
-}
-
-iframe {
-    border-radius: 8px;
-    border: 1px solid #e5e5e5;
-}
-
-/* Фиксированная кнопка "На главную" */
-.home-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: #2563eb;
-    color: #ffffff;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.home-button::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpolyline points='9 22 9 12 15 12 15 22'/%3E%3C/svg%3E");
-}
-
-.home-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
-}
-
-.home-button:active {
-    transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-    .home-button {
-        width: 40px;
-        height: 40px;
-        top: 16px;
-        left: 16px;
-    }
-    
-    .home-button::before {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .home-button {
-        width: 38px;
-        height: 38px;
-        top: 14px;
-        left: 14px;
-    }
-    
-    .home-button::before {
-        width: 17px;
-        height: 17px;
-    }
-}
-
-.blk_button_data_wrap {
-    text-align: center;
-    margin: 24px 0;
-}
+a { transition: color 0.2s ease; }
 
 .btn-new {
-    border-radius: 8px;
-    color: #ffffff;
-    transition: all 0.2s ease;
-    background: #2563eb;
-    position: relative;
-    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background: var(--primary-color, #2563eb);
     padding: 14px 28px;
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
-    border: none;
-    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .btn-new:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: var(--primary-hover, #1d4ed8);
 }
 
-.btn-new:active {
-    transform: translateY(0);
-}
-
-/* MathJax стили */
-mjx-container {
-    margin: 16px 0 !important;
-}
-
-/* Адаптивность */
 @media (max-width: 768px) {
-    body {
-        padding-top: 32px;
-    }
-    
-    .content {
-        padding: 24px 20px;
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.375rem;
-        margin: 24px 0 12px 0;
-        padding-top: 20px;
-    }
-    
-    h3 {
-        font-size: 1rem;
-        margin: 20px 0 10px 0;
-    }
-    
-    h4 {
-        padding: 24px 0;
-    }
+    .content { padding: 16px; border-radius: 0; border-left: none; border-right: none; }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding-top: 24px;
-        font-size: 15px;
-    }
-    
-    .content {
-        padding: 20px 16px;
-    }
-    
-    h1 {
-        font-size: 1.75rem;
-    }
-    
-    h2 {
-        font-size: 1.25rem;
-        margin: 20px 0 10px 0;
-        padding-top: 16px;
-    }
-    
-    h3 {
-        font-size: 0.95rem;
-        margin: 16px 0 8px 0;
-    }
-    
-    .btn-new {
-        padding: 12px 24px;
-        font-size: 0.95rem;
-    }
-    
-    mjx-container {
-        font-size: 90% !important;
-        margin: 12px 0 !important;
-    }
+    mjx-container { font-size: 85% !important; }
 }
